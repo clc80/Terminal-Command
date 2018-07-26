@@ -17,6 +17,11 @@ module.exports.touch = (name) => {
   });
 };
 
-/*module.eports.mkdir = () => {
-
-};*/
+module.exports.mkdir = (directoryName) => {
+  fs.mkdir(directoryName,function(err){
+   if (err) {
+      return console.error(err);
+   }
+   console.log(`${directoryName} created successfully!`);
+ });
+};

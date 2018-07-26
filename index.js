@@ -1,5 +1,10 @@
 const terminalCommands = require('./terminal-commands');
 
-terminalCommands.ls();
+//make a new file
+terminalCommands.touch("sample2.js");
 
-terminalCommands.touch("sample.js");
+//make a new directory
+terminalCommands.mkdir("Sample");
+
+//list all item in folder
+terminalCommands.ls();
