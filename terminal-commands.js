@@ -9,3 +9,11 @@ module.exports.ls = () => {
     console.log(filesToString);
   });
 };
+
+module.exports.touch = () => {
+
+};
+
+module.eports.mkdir = () => {
+
+};
