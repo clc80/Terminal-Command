@@ -10,10 +10,13 @@ module.exports.ls = () => {
   });
 };
 
-module.exports.touch = () => {
-
+module.exports.touch = (name) => {
+  fs.open(name, 'w', function (err, file) {
+    if (err) throw err;
+    console.log(`${name} has been created`);
+  });
 };
 
-module.eports.mkdir = () => {
+/*module.eports.mkdir = () => {
 
-};
+};*/
